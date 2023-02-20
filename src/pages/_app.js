@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import Container from "@/component/Container/Container";
 
 export default function App({ Component, pageProps }) {

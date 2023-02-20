@@ -1,12 +1,19 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./Navbar.module.scss";
 
 export default function Navbar() {
     return (
-        <div>
-            <Link href={`/`}>Accueil</Link>
-            <Link href={`/blog/article`}>&nbsp;&nbsp;Article</Link>
-            <Link href={`/contact`}>&nbsp;&nbsp;Contact</Link>
-        </div>
+        <nav className={styles.navbar}>
+            <Link className={styles.link} href={`/`}>
+                Accueil
+            </Link>
+            <Link className={styles.link} href={`/blog/article`}>
+                &nbsp;&nbsp;Article
+            </Link>
+            <Link className={styles.link} href={`/contact`}>
+                &nbsp;&nbsp;Contact
+            </Link>
+        </nav>
     );
 }
