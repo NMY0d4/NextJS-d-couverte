@@ -1,4 +1,3 @@
-import Navbar from "@/component/Navbar";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
 
@@ -9,8 +8,9 @@ export default function Home() {
     return (
         <>
             <h1>Hello Next JS</h1>
-            <a href="https://google.com">google</a>
-            <Navbar />
+            <a href="https://google.com" target="_blank">
+                google
+            </a>
         </>
     );
 }
