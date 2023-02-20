@@ -8,11 +8,11 @@ export default function Navbar() {
             <Link className={styles.link} href={`/`}>
                 Accueil
             </Link>
-            <Link className={styles.link} href={`/blog/article`}>
-                &nbsp;&nbsp;Article
+            <Link className={styles.link} href={`/blog`}>
+                Blog
             </Link>
             <Link className={styles.link} href={`/contact`}>
-                &nbsp;&nbsp;Contact
+                Contact
             </Link>
         </nav>
     );
