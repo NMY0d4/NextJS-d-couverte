@@ -17,6 +17,7 @@ export default function Home() {
                 <title>training NextJS</title>
             </Head>
             <h1>Hello Next JS</h1>
+            <button className="btn btn-primary">bootstest</button>
             <a href="https://google.com" target="_blank">
                 google
             </a>
