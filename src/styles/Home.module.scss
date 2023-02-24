@@ -4,3 +4,25 @@
     font-size: 3rem;
     padding: 1rem 2rem;
 }
+
+.titre {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tableau {
+    margin: 0 auto;
+    font-size: 20px;
+
+    tr {
+        border: 1px solid #333;
+    }
+    td {
+        padding: 10px;
+        text-align: center;
+        min-width: 200px;
+        &:nth-child(1) {
+            border-right: 1px solid #333;
+        }
+    }
+}

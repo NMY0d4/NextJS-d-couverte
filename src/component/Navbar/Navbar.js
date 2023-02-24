@@ -8,9 +8,6 @@ export default function Navbar() {
             <Link className={styles.link} href={`/`}>
                 Accueil
             </Link>
-            <Link className={styles.link} href={`/galery`}>
-                Gallery
-            </Link>
             <Link className={styles.link} href={`/blog`}>
                 Blog
             </Link>
