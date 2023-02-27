@@ -1,11 +1,21 @@
 import Link from "next/link";
-import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function index({ listes }) {
   return (
-    <div>
-      <h1>Les listes de vocabulaire</h1>
-      {/* <Link href={`/blog/10 plats Lorrains`}>10 plats Lorrains</Link> */}
+    <div className="container">
+      <h1 className="text-center my-5">Les listes de Vocabulaire</h1>
+      <ul className="list-group" style={{ width: "20%", margin: "0 auto" }}>
+        {listes.map((cat) => {
+          return (
+            <li key={uuidv4()} className="text-center list-group-item">
+              <Link href={`/listes/${Object.keys(cat)[0]}`}>
+                {Object.keys(cat)[0]}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
