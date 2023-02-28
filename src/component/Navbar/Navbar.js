@@ -11,8 +11,8 @@ export default function Navbar() {
       <Link className={styles.link} href={`/listes`}>
         Listes
       </Link>
-      <Link className={styles.link} href={`/contact`}>
-        Contact
+      <Link className={styles.link} href={`/citation`}>
+        Citation
       </Link>
     </nav>
   );

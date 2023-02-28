@@ -39,9 +39,10 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const data = await request("listes");
+  const paths = data.englishList.map((el) => ({ params: { liste: el.name } }));
 
   return {
-    paths: [{ params: { liste: "words" } }],
+    paths,
     fallback: false,
   };
 }

@@ -1,6 +1,8 @@
 import { Inter } from "@next/font/google";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import request from "../utils/request/data.request";
+
 import { v4 as uuidv4 } from "uuid";
 
 // import Link from "next/link";
@@ -33,7 +35,7 @@ export default function Home({ array }) {
 }
 
 export async function getStaticProps() {
-  const data = await import(`../data/vocabulary.json`);
+  const data = await request("vocabulary");
   const array = data.vocabulary;
 
   if (array.length === 0) {
