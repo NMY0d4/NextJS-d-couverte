@@ -1,7 +1,9 @@
 import { Inter } from "@next/font/google";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Link from "next/link";
+import { v4 as uuidv4 } from "uuid";
+
+// import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +19,8 @@ export default function Home({ array }) {
         <h1 className={styles.titre}>Vocabulaire de base</h1>
         <table className={styles.tableau}>
           <tbody>
-            {array.map((el, i) => (
-              <tr key={i}>
+            {array.map((el) => (
+              <tr key={uuidv4()}>
                 <td>{el.en}</td>
                 <td>{el.fr}</td>
               </tr>

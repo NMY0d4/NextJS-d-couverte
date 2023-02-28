@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function contact({ data }) {
+export default function Contact({ data }) {
   return (
     <div>
       <h1>{data.content}</h1>

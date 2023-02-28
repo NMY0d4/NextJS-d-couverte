@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 
-function index({ listes }) {
+function Index({ listes }) {
   return (
     <div className="container">
       <h1 className="text-center my-5">Les listes de Vocabulaire</h1>
@@ -9,9 +9,7 @@ function index({ listes }) {
         {listes.map((cat) => {
           return (
             <li key={uuidv4()} className="text-center list-group-item">
-              <Link href={`/listes/${Object.keys(cat)[0]}`}>
-                {Object.keys(cat)[0]}
-              </Link>
+              <Link href={`/listes/${cat.name}`}>{cat.name}</Link>
             </li>
           );
         })}
@@ -20,7 +18,7 @@ function index({ listes }) {
   );
 }
 
-export default index;
+export default Index;
 
 export async function getStaticProps() {
   const data = await import(`../../data/listes.json`);
