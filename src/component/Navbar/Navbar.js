@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Navbar.module.scss";
 
 export default function Navbar() {
+  
   return (
     <nav className={styles.navbar}>
       <Link className={styles.link} href={`/`}>
@@ -14,8 +15,8 @@ export default function Navbar() {
       <Link className={styles.link} href={`/citation`}>
         Citation
       </Link>
-      <Link className={styles.link} href={`/cours`}>
-        cours du BitCoin
+      <Link className={styles.link} href={`/add`}>
+        Add (POST)
       </Link>
     </nav>
   );
