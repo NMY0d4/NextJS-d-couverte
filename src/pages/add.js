@@ -7,7 +7,7 @@ export default function add() {
     e.preventDefault();
     const newWord = {
       en: enWord.current.value,
-      fr: enWord.current.value,
+      fr: frWord.current.value,
     };
     fetch('/api/vocapi', {
       method: 'POST',
