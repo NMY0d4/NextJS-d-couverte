@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.scss';
 
 import request from '../../utils/request/data.request';
 
-export default function liste({ listeActive }) {
+export default function Liste({ listeActive }) {
   const { name, data } = listeActive;
 
   return (
