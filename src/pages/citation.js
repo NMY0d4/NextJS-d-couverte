@@ -12,8 +12,8 @@ export default function Citation({ data }) {
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
                   alt="Bulb"
                   width="100"
-                  height="100"
-                />
+                  height="80"
+                />{" "}
               </div>
 
               <figure className="text-center mb-0">

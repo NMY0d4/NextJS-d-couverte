@@ -9,7 +9,9 @@ export default function liste({ listeActive }) {
 
   return (
     <div className="container">
-      <h1 className={styles.titre}>{name}</h1>
+      <h1 className={styles.titre}>{`${name
+        .charAt(0)
+        .toUpperCase()}${name.slice(1)}`}</h1>
       <table className={styles.tableau}>
         <tbody>
           {data.map((el) => (

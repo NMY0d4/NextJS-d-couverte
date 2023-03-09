@@ -1,28 +1,30 @@
 .errorTitle {
-    color: red;
-    background-color: black;
-    font-size: 3rem;
-    padding: 1rem 2rem;
+  text-align: center;
+  color: red;
+  background-color: black;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  margin-top: 5rem;
 }
 
 .titre {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .tableau {
-    margin: 0 auto;
-    font-size: 20px;
+  margin: 0 auto;
+  font-size: 20px;
 
-    tr {
-        border: 1px solid #333;
+  tr {
+    border: 1px solid #333;
+  }
+  td {
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+    &:nth-child(1) {
+      border-right: 1px solid #333;
     }
-    td {
-        padding: 10px;
-        text-align: center;
-        min-width: 200px;
-        &:nth-child(1) {
-            border-right: 1px solid #333;
-        }
-    }
+  }
 }

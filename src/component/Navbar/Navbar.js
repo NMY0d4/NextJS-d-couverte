@@ -14,6 +14,9 @@ export default function Navbar() {
       <Link className={styles.link} href={`/citation`}>
         Citation
       </Link>
+      <Link className={styles.link} href={`/cours`}>
+        cours du BitCoin
+      </Link>
     </nav>
   );
 }
